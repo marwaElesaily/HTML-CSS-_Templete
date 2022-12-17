@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: 'Varela Round', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.clear{
+    clear: both;
+}
+button{
+    font-family: inherit;
+}
+.hover-opacity{
+    transition: opacity .5s;
+}
+.hover-opacity:hover{
+    opacity: .8;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 0 auto 70px auto;
+    background-color: #6195ff;
+}
+.padding-y{
+    padding: 120px 0;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    /* background-color: gray; */
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+}
+.header-content{
+    overflow: hidden;
+}
+
+.header .logo{
+    width: 40%;
+    float: left;
+}
+.header .nav {
+    width: 60%;
+    float: left;
+    list-style: none;
+}
+
+.header .nav li {
+    display: inline-block;
+    width: 85px;
+    text-align: center;
+}
+.header .nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 30px 15px;  
+}
+
+/* home */
+.home{
+    background-image: url(../images/background/background1.webp);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.home-content{
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.home .title{
+    
+    text-transform: uppercase;
+    font-size: 3.1rem;
+    color: #fff;
+    /* padding-left:170px ; */
+}
+.page-discription{
+    color: #fff;
+    padding: 20px 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.home .btn{
+    min-width:160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.home .btn-getStarted{
+    margin-right: 10px;
+    background-color: #fff;
+}
+.home .btn-learnMore{
+    background-color: #6195ff;
+    color: #fff;
+}
+/* .btn_pos{
+    margin-left: 30%;
+} */
+
+.about{
+
+}
+.about-content{
+    overflow: hidden;
+}
+.about-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px ;
+   
+}
+.about-item:hover{
+    background-color: darkgrey;
+}
+.about-item.mg{
+    margin: 0 5%;
+
+}
+.about-item .icon{
+    color: #6195ff;
+    margin-bottom:10px;
+}
+.about-item-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.about-item-desc{
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.about-item .link{
+    color: #6195ff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.portfolio{
+    background: #f9f9f9 ;
+}
+.portfolio-content{
+    overflow: hidden;
+}
+.portfolio-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 60px;
+    padding: 20px;
+    position: relative;
+}
+.portfolio-item .layer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+
+}
+.portfolio-item:hover .layer-content{
+    opacity: 1;
+    visibility: visible;
+}
+.layer-content .layer-info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.layer-content .category{
+    color: #6195ff;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+.layer-content-title{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.layer-content a{
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #6195ff;
+}
+.layer-content a i{
+    line-height: 40px;
+}
+.portfolio-item.mg {
+    margin: 0 5%;
+}
+.portfolio-item img{
+    width: 100%;
+}
+
+.footer{
+    background-color: #1c1d21;
+    text-align: center;
+    padding: 60px 0;
+}
+.footer-links{
+    list-style: none;
+    margin: 20px 0;
+}
+.footer-links li{
+    display: inline-block;
+}
+.footer-links li a{
+    display:block;
+    width: 50px;
+    height: 50px;
+    background-color: #6195ff;
+    color: #fff;
+}
+.footer-links li a i {
+    line-height: 50px;
+}
+.copyright{
+    color: #999;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
